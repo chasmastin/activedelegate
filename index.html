@@ -1,87 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Active Delegate by chasmastin</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Active Delegate : Application to make votes of elected officials directly correlate to the desires of their constituency.  " />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Active Delegate</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Active Delegate</h1>
-        <p>Application to make votes of elected officials directly correlate to the desires of their constituency.  </p>
 
-        <p class="view"><a href="https://github.com/chasmastin/slingshot">View the Project on GitHub <small>chasmastin/slingshot</small></a></p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/chasmastin/activedelegate">View on GitHub</a>
 
+          <h1 id="project_title">Active Delegate</h1>
+          <h2 id="project_tagline">Realtime Representative Democracy</h2>
 
-        <ul>
-          <li><a href="https://github.com/chasmastin/slingshot/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/chasmastin/slingshot/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/chasmastin/slingshot">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>Welcome to Active Delagate (AD)</h3>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/chasmastin/activedelegate/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/chasmastin/activedelegate/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-	<p>Elected officials who decide to use  are making a commitment that all of their votes on legislation 
-		will directly reflect the results of real-time polling done by the Slingshot app.  Slingshot is party-neutral 
-		and ideology-neutral.  To use Slingshot, a politician simply has to sign a pledge 
-		that states they will follow the results of the app, and if they do not they cannot use the app to help govern.</p>  
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Welcome to Active Delegate.</h3>
 
-		<p>Some general design principals of the app:</p>
+<p>The problem: the feedback loop of Representative Democracy is not fast enough - people feel disconnected from their elected officials, and less than half of the population votes at all.
+Politicians cater to those who can give them the largest campaign contributions, and the two-party system has calcified political discourse.
+</p>
 
-<ol><li>Authenticity:  Slingshot will require that each participant validate themselves as a real person.  
-		While voting record and position can remain anonymous, this approach to governance will only function 
-		if there is 100% trust in the validity of the polling.</li>
+<p>
+The solution we propose involves changing no laws, but simply introducing new technology and finding politicians who are willing to commit to using it.  We will then help to get 
+those Active Delegates elected via a superPAC that will run campaign commercials on their behalf.
+</p>
 
-		<li>Slingshot makes politicians more into communicators of meaning of legislation to their constituents.   
-		The final decision will be in the hands of the constituents.  Thus, the app must create a vibrant discussion 
-		community around legislation and allow for direct communication from politicians to people.</li>
+<p>Elected officials who decide to use Active Delegate are making a commitment that all of their votes on legislation
+will directly reflect the results of real-time polling done by the Active Delegate app. Active Delegate is party-neutral
+and ideology-neutral. You can be a Republican Active Delegate or a Democratic Active Delegate.  Or you can just be an Active Delegate.  It all works the same way</p>
 
-		<li>The app must be as freely accessible as possible via the web and mobile devices.</li>
+<p>
+To use Active Delegate, a politician simply has to sign a pledge that states they will follow the results of the app, and if they do not they cannot use the app to help govern.  </p>
 
-		<li>Because very few people will be able to research and vote every day on every issue, one of the fundamental 
-		design principals is "autopolling", which can be optionally enabled.  Once enabled, the app will take your
-		preferences on social and economic issues and cast a vote for you based on user-analysis of a given piece 
-		of legislation.</li></ol>     
+<p>Some general design principals of the app:</p>
 
-		<p>An example of the autopolling process:</p>
+<ol>
+<li>Authenticity: Active Delegate will require that each participant validate themselves as a real person.
 
-		<p>A politician is elected on a platform that she will use the Slingshot app to govern.  Her constituents are 
-		all given an account in the system, and after authenticating they can log into the Slingshot site or download 
-		the app.  Once there, they are initially asked a series of questions that ascertain their position on a variety 
-		of issues.  Let's say, for the sake of this example, that a constituent determines that they are resolutely 
-		pro-life, no matter what.  So, a piece of legislation comes through the elected body that the users of the 
-		app determine, after research and presentation by the politician, that is pro-life.  If the constituent has 
-		determined they are pro-life, the system would automatically cast a vote in support of the bill for the constituent
-		if they have enabled and agreed to the terms of autopolling.</p>
+While voting record and position can remain anonymous, this approach to governance will only function
+
+if there is 100% trust in the validity of the polling.</li>
 
 
-		<p>The plan is to build the system, refine it over the next year, and run candidates starting in 2013 or 2014.  
-		My initial inclination is to use Ruby on Rails for the web framework, and I believe both a webapp version 
-		(Sencha Touch?) and native iOS and Android versions will be build.  No matter what, this has to be 
-		Open Source Government.  This idea has been bouncing around my head for several years and I believe that if
-		properly executed it could address many of the seemingly calcified issues facing our government in the 
-		United States, and Representative Democracies in general.</p>  
 
-		<p>Slingshot is just a working development title by the way, the actual app will have a different brand when 
-		presented by candidates.  Our marketing department is working on it now...</p>
+<li>The goal of Active Delegate is to make politicians into the communicators of the meaning of specific pieces of legislation to their constituents.
+
+The final decision will be in the hands of the constituents. Thus, the app must create a vibrant discussion
+
+community around legislation and allow for direct communication from politicians to people.</li>
 
 
+
+<li>The app must be as freely accessible as possible via the web and mobile devices.</li>
+
+
+
+<li>Because very few people will be able to research and vote every day on every issue, one of the fundamental
+
+design principals is "autopolling", which can be optionally enabled. Once enabled, the app will take your
+
+preferences on social and economic issues and cast a vote for you based on user-analysis of a given piece
+
+of legislation.</li>
+</ol><p>An example of the autopolling process:</p>
+
+<p>A politician is elected on a platform that she will use the Active Delegate app to govern. Her constituents are
+
+all given an account in the system, and after authenticating they can log into the Active Delegate site or download
+
+the app. Once there, they are initially asked a series of questions that ascertain their position on a variety
+
+of issues. Let's say, for the sake of this example, that a constituent determines that they are resolutely
+
+pro-life, no matter what. So, a piece of legislation comes through the elected body that the users of the
+
+app determine, after research and presentation by the politician, that is pro-life. If the constituent has
+
+determined they are pro-life, the system would automatically cast a vote in support of the bill for the constituent
+
+if they have enabled and agreed to the terms of autopolling.</p>
+
+<p>The plan is to build the system, refine it over the next year, and run candidates starting in 2013 or 2014.
+
+My initial inclination is to use Ruby on Rails or Django for the web framework, and I believe both a webapp version
+
+(Sencha Touch?) and native iOS and Android versions will be built. This idea has been bouncing around my head for several years and I believe that if properly executed it could address many of the seemingly calcified issues facing our government in the United States, and Representative Democracies in general.</p>
+
+<p>If you can code, plan, or contribute in any way (including marketing, candidate recruitment, cheerleading) and are interested in helping to create a new type of Representational Democracy using our ubiquitous smart devices and web connections, then please contact Chas or visit one of our upcoming meetups in New York City.  Coming soon:  a real website, and real code!</p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/chasmastin">chasmastin</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Active Delegate maintained by <a href="https://github.com/chasmastin">chasmastin</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
     
+
   </body>
 </html>
